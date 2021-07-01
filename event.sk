@@ -1,0 +1,35 @@
+command /event:
+	trigger:
+		send "&a-------------------------------------" to player
+		send "&eEvent Infos:" to player
+		send "&6&lKomme bitte auf den Voodoo-Gaming.de" to player
+		send "&6&lin den Teamspeak Support" to player
+		send "&a-------------------------------------" to player
+
+
+
+command /eventstart:
+	permission: event.admin
+	permission message: &e&lVoodoo-Gaming: &4&lNö. Dass Hättest du wohl gerne
+	trigger:
+		send "&a------------Voodoo-Gaming System--------------" to players
+		send "&4&lDass Event Wird Gestartet Von &a&l%player%" to players
+		send "&4&lDie Wände Fallen in 1 Minute" to players
+		wait for 57 seconds
+		send "&4&lDie Wände Fallen in 3" to players
+		wait for 1 seconds
+		send "&4&lDie Wände Fallen in 2" to players
+		wait for 1 seconds
+		send "&4&lDie Wände Fallen in 1" to players
+		wait for 1 seconds
+		send "&4&lDie Wände Fallen, Lasst Das Event Beginnen" to players
+		send "&a------------Voodoo-Gaming System--------------" to players
+
+
+command /eventstop:
+	permission: event.admin
+	permission message: &e&lVoodoo-Gaming: &4&lNö. Dass Hättest du wohl gerne
+	trigger:
+		send "&4&lDass Event ist Vorbei, Das Ergebnis Erfahrt ihr in der konferenz" to players 
+
+		
